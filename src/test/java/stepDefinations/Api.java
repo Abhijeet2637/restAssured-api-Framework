@@ -28,6 +28,5 @@ public class Api {
                        "  \"bankName\": \"HDFC Bank\"\n" +
                        "}").when().log().all().post("/gwplutus/plutus-beneficiary-service/api/v2/ifi/1000001/create/beneficiary/uYfx4Iy0C8DYkxtaS4OYzQ==").
                then().log().all().assertThat().statusCode(200).extract().response().asString();
-       System.out.println(response);
     }
 }
