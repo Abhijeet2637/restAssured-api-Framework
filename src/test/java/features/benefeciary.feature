@@ -17,3 +17,5 @@ Feature: Validate the beneficiary api
     When User calls delete beneficiary api with Delete https method
     Then API call get success with status code 200
     And status in response body is DELETED
+
+
